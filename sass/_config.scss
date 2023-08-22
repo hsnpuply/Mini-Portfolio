@@ -17,6 +17,6 @@ $secondary-color:#ff652f;
     @if (lightness($color)>40%){
         @return #000;
     }@else{
-        
+        @return #fff;
     }
 }

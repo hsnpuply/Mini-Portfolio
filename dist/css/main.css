@@ -24,6 +24,48 @@
   font-weight: 700;
 }
 
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+
 body {
   background-color: #272727;
   color: #fff;
