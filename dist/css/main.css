@@ -43,7 +43,7 @@
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn::before {
+.menu-btn__burger::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -52,7 +52,7 @@
   background-color: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn::after {
+.menu-btn__burger::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -61,9 +61,54 @@
   background-color: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn.open {
+.menu-btn__burger.open {
   transform: rotate(720deg);
   background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #272727;
+  list-style: none;
+  padding-right: 1rem;
+  transform: translate(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: #ff652f;
 }
 
 body {
