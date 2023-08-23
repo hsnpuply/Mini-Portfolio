@@ -1,7 +1,8 @@
 @import 'config';
 @import 'home';
 @import 'menu';
-
+@import 'about';
+@import 'projects';
 
 body{
     background-color: $primary-color;
@@ -45,6 +46,10 @@ main{
         &:hover{
             color: $secondary-color;
         }
+    }
+
+    .text-secondary{
+        color: $secondary-color;
     }
 }
 
