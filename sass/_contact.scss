@@ -1,0 +1,32 @@
+.contact{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+    linear-gradient(to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+    ),
+    url('/images/johnsmith.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+   .text-secondary{
+    margin: .5rem 0;
+   }
+}

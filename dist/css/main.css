@@ -260,6 +260,7 @@ footer span {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   text-align: center;
+  font-size: 1.5rem;
 }
 .projects__btn {
   opacity: 0;
@@ -280,6 +281,31 @@ footer span {
 }
 .projects footer span {
   font-size: 1.32rem;
+}
+
+.contact {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/images/johnsmith.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+}
+.contact .text-secondary {
+  margin: 0.5rem 0;
 }
 
 body {
